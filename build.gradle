@@ -1,5 +1,5 @@
 ext {
-    xazabjVersion = "0.17.4"
+    xazabjVersion = "0.17.5"
 }
 
 buildscript {

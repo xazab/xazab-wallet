@@ -690,7 +690,7 @@ SWIGEXPORT void JNICALL Java_org_xazabj_bls_JNI_BLS_1SetContextError(JNIEnv *jen
   core_get()->code = error;
 }
 
-std::string XAZABJ_VERSION = "0.17.4";
+std::string XAZABJ_VERSION = "0.17.5";
 
 SWIGEXPORT jstring JNICALL Java_org_xazabj_bls_JNI_BLS_1GetVersionString(JNIEnv *jenv, jclass jcls) {
   (void)jenv;

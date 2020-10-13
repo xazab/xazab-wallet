@@ -30,7 +30,7 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.2.0'
     api 'androidx.browser:browser:1.2.0'
-    implementation "org.xazabj:xazabj-core:0.17.4"
+    implementation "org.xazabj:xazabj-core:0.17.5"
 
     //Retrofit + OkHttp
     api "com.squareup.okhttp3:okhttp:$ok_http_version"
