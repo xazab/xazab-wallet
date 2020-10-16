@@ -255,7 +255,7 @@
     <string name="about_help_us_improve">Help us improve your experience</string>
     <string name="about_review_and_rate">Review &amp; Rate the app</string>
     <string name="about_contact_support">Contact Support</string>
-    <string name="about_fork_disclaimer">This is an open source app forked from Bitcoin Wallet</string>
+    <string name="about_fork_disclaimer">This is an open source app forked from Dash Wallet</string>
     <string name="about_copyright" translatable="false">Copyright © 2020 Xazab Core</string>
     <string name="about_license">GNU General Public License v3.0</string>
     <string name="about_github_link" translatable="false">https://github.com/xazab/xazab-wallet</string>
