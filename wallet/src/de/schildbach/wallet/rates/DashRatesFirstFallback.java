@@ -8,19 +8,19 @@ import java.util.List;
 /**
  * @author Samuel Barbosa
  */
-public class DashRatesFirstFallback implements ExchangeRatesClient {
+public class XazabRatesFirstFallback implements ExchangeRatesClient {
 
-    private static DashRatesFirstFallback instance;
+    private static XazabRatesFirstFallback instance;
     private static final String VES_CURRENCY_CODE = "VES";
 
-    public static DashRatesFirstFallback getInstance() {
+    public static XazabRatesFirstFallback getInstance() {
         if (instance == null) {
-            instance = new DashRatesFirstFallback();
+            instance = new XazabRatesFirstFallback();
         }
         return instance;
     }
 
-    private DashRatesFirstFallback() {
+    private XazabRatesFirstFallback() {
 
     }
 
@@ -31,11 +31,11 @@ public class DashRatesFirstFallback implements ExchangeRatesClient {
         CryptoCompareClient cryptoCompareClient = CryptoCompareClient.getInstance();
 
         List<ExchangeRate> rates = btcAvgClient.getGlobalIndices().body();
-        Rate dashBtcRate = cryptoCompareClient.getDashCustomAverage().body();
+        Rate xazabBtcRate = cryptoCompareClient.getXazabCustomAverage().body();
 
-        BigDecimal dashVesPrice = DashCasaClient.getInstance().getRates().body().getDashVesPrice();
+        BigDecimal xazabVesPrice = XazabCasaClient.getInstance().getRates().body().getXazabVesPrice();
 
-        if (rates == null || rates.isEmpty() || dashBtcRate == null || dashVesPrice == null) {
+        if (rates == null || rates.isEmpty() || xazabBtcRate == null || xazabVesPrice == null) {
             throw new IllegalStateException("Failed to fetch prices from Fallback1");
         }
 
@@ -43,16 +43,16 @@ public class DashRatesFirstFallback implements ExchangeRatesClient {
         for (ExchangeRate rate : rates) {
             if (VES_CURRENCY_CODE.equalsIgnoreCase(rate.getCurrencyCode())) {
                 vesRateExists = true;
-                if (dashVesPrice.compareTo(BigDecimal.ZERO) > 0) {
-                    rate.setRate(dashVesPrice.toPlainString());
+                if (xazabVesPrice.compareTo(BigDecimal.ZERO) > 0) {
+                    rate.setRate(xazabVesPrice.toPlainString());
                 }
             } else {
                 BigDecimal currencyBtcRate = new BigDecimal(rate.getRate());
-                rate.setRate(currencyBtcRate.multiply(dashBtcRate.getRate()).toPlainString());
+                rate.setRate(currencyBtcRate.multiply(xazabBtcRate.getRate()).toPlainString());
             }
         }
         if (!vesRateExists) {
-            rates.add(new ExchangeRate(VES_CURRENCY_CODE, dashVesPrice.toPlainString()));
+            rates.add(new ExchangeRate(VES_CURRENCY_CODE, xazabVesPrice.toPlainString()));
         }
 
         return rates;

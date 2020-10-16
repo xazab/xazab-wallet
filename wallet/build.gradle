@@ -32,7 +32,7 @@ dependencies {
     implementation 'com.google.android:flexbox:1.1.0'
     implementation 'androidx.preference:preference:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta4'
-    implementation "org.dashj:dashj-core:0.17.4"
+    implementation "xyz.xazabj:xazabj-core:0.17.4"
     implementation 'com.google.protobuf:protobuf-java:3.4.0'
     implementation 'com.google.guava:guava:27.0.1-android'
     implementation 'com.google.zxing:core:3.3.3'
@@ -92,7 +92,7 @@ dependencies {
 
 
 ext {
-    archivesBaseName = 'dash-wallet'
+    archivesBaseName = 'xazab-wallet'
 }
 
 android {
@@ -177,7 +177,7 @@ android {
     flavorDimensions "default"
     productFlavors {
         beta {
-            applicationId = "hashengineering.dash.wallet.beta"
+            applicationId = "hashengineering.xazab.wallet.beta"
         }
         prod {
             applicationId = "hashengineering.darkcoin.wallet"

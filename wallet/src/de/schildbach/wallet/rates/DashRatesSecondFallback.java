@@ -10,20 +10,20 @@ import java.util.List;
 /**
  * @author Samuel Barbosa
  */
-public class DashRatesSecondFallback implements ExchangeRatesClient {
+public class XazabRatesSecondFallback implements ExchangeRatesClient {
 
-    private static DashRatesSecondFallback instance;
+    private static XazabRatesSecondFallback instance;
     private static final String VES_CURRENCY_CODE = "VES";
     private List<String> excludedRates = Arrays.asList("BTC", "BCH", "XAG", "XAU", "VEF");
 
-    public static DashRatesSecondFallback getInstance() {
+    public static XazabRatesSecondFallback getInstance() {
         if (instance == null) {
-            instance = new DashRatesSecondFallback();
+            instance = new XazabRatesSecondFallback();
         }
         return instance;
     }
 
-    private DashRatesSecondFallback() {
+    private XazabRatesSecondFallback() {
 
     }
 
@@ -31,35 +31,35 @@ public class DashRatesSecondFallback implements ExchangeRatesClient {
     @Override
     public List<ExchangeRate> getRates() throws Exception {
         List<BitPayRate> rates = BitPayClient.getInstance().getRates().body().getRates();
-        BigDecimal dashCentralPrice = DashCentralClient.getInstance().getDashBtcPrice().body().getRate();
+        BigDecimal xazabCentralPrice = XazabCentralClient.getInstance().getXazabBtcPrice().body().getRate();
         BigDecimal poloniexPrice = PoloniexClient.getInstance().getRates().body().getRate();
-        BigDecimal dashVesPrice = LocalBitcoinsClient.getInstance().getRates().body().getDashVesPrice();
+        BigDecimal xazabVesPrice = LocalBitcoinsClient.getInstance().getRates().body().getXazabVesPrice();
 
-        if (rates == null || rates.isEmpty() || (dashCentralPrice == null && poloniexPrice == null)) {
+        if (rates == null || rates.isEmpty() || (xazabCentralPrice == null && poloniexPrice == null)) {
             throw new IllegalStateException("Failed to fetch prices from Fallback2");
         }
 
-        BigDecimal dashBtcRate = null;
+        BigDecimal xazabBtcRate = null;
         if (poloniexPrice.compareTo(BigDecimal.ZERO) > 0) {
-            if (dashCentralPrice.compareTo(BigDecimal.ZERO) > 0) {
-                dashBtcRate = dashCentralPrice.add(poloniexPrice).divide(BigDecimal.valueOf(2));
+            if (xazabCentralPrice.compareTo(BigDecimal.ZERO) > 0) {
+                xazabBtcRate = xazabCentralPrice.add(poloniexPrice).divide(BigDecimal.valueOf(2));
             } else {
-                dashBtcRate = poloniexPrice;
+                xazabBtcRate = poloniexPrice;
             }
-        } else if (dashCentralPrice.compareTo(BigDecimal.ZERO) > 0) {
-            dashBtcRate = dashCentralPrice;
+        } else if (xazabCentralPrice.compareTo(BigDecimal.ZERO) > 0) {
+            xazabBtcRate = xazabCentralPrice;
         }
 
         List<ExchangeRate> exchangeRates = new ArrayList<>();
         for(BitPayRate rate : rates) {
             if (!excludedRates.contains(rate.getCode())) {
-                if (VES_CURRENCY_CODE.equalsIgnoreCase(rate.getCode()) && dashVesPrice != null
-                        && dashVesPrice.compareTo(BigDecimal.ZERO) > 0) {
-                    exchangeRates.add(new ExchangeRate(rate.getCode(), dashVesPrice.toPlainString()));
+                if (VES_CURRENCY_CODE.equalsIgnoreCase(rate.getCode()) && xazabVesPrice != null
+                        && xazabVesPrice.compareTo(BigDecimal.ZERO) > 0) {
+                    exchangeRates.add(new ExchangeRate(rate.getCode(), xazabVesPrice.toPlainString()));
                     continue;
                 }
                 exchangeRates.add(new ExchangeRate(rate.getCode(),
-                        dashBtcRate.multiply(rate.getRate()).toPlainString()));
+                        xazabBtcRate.multiply(rate.getRate()).toPlainString()));
             }
         }
 

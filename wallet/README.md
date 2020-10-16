@@ -10,7 +10,7 @@ storage:
 	Testnet: /data/data/hashengineering.darkcoin.wallet_test/files/wallet-protobuf-testnet (MODE_WORLD_READABLE | MODE_WORLD_WRITEABLE)
 
 The wallet file format is not compatible to wallet.dat (Satoshi client). Rather, it uses a custom protobuf format
-which should be compatible between clients using dashj.
+which should be compatible between clients using xazabj.
 
 Certain actions cause automatic rolling backups of your wallet to app-private storage:
 
@@ -19,8 +19,8 @@ Certain actions cause automatic rolling backups of your wallet to app-private st
 
 Your wallet can be manually backed up to and restored from external storage:
 
-	Mainnet: /sdcard/Download/dash-wallet-backup-<yyyy-MM-dd>
-	Testnet: /sdcard/Download/dash-wallet-backup-testnet-<yyyy-MM-dd>
+	Mainnet: /sdcard/Download/xazab-wallet-backup-<yyyy-MM-dd>
+	Testnet: /sdcard/Download/xazab-wallet-backup-testnet-<yyyy-MM-dd>
 
 Your wallet can be manually backed up and restored using a recovery phrase (12 word mnemonic).
 
@@ -73,18 +73,18 @@ Download and install the required Android dependencies:
 
 Download the [Android NDK](https://developer.android.com/ndk/downloads/), then unpack it to your workspace directory. Point your `ANDROID_NDK_HOME` variable to the unpacked Android NDK directory.
 
-Finally, you can build Dash Wallet and sign it with your development key. Again in your workspace,
+Finally, you can build Xazab Wallet and sign it with your development key. Again in your workspace,
 use
 
 	# first time only
-	git clone -b master https://github.com/HashEngineering/dash-wallet.git dash-wallet
-	cd dash-wallet
+	git clone -b master https://github.com/HashEngineering/xazab-wallet.git xazab-wallet
+	cd xazab-wallet
 	git pull
 	git submodule init
     git submodule update
     
 	# each time
-	cd dash-wallet
+	cd xazab-wallet
 	git pull
     gradle clean assemble_testNet3Debug -x test
 
@@ -94,7 +94,7 @@ To install the app on your Android device, use:
     sudo apt install android-tools-adb
 
 	# each time
-	adb install wallet/build/outputs/apk/dash-wallet-_testNet3-debug.apk
+	adb install wallet/build/outputs/apk/xazab-wallet-_testNet3-debug.apk
 
 If installation fails, make sure "Developer options" and "USB debugging" are enabled on your Android device, and an ADB
 connection is established.
@@ -113,16 +113,16 @@ the 'prod' flavor.
 
 
 	# each time
-	cd dash-wallet
+	cd xazab-wallet
 	git pull
     gradle clean build assembleProdRelease
 
-The resulting production release version will be at:  wallet/build/outputs/apk/dash-wallet-prod-release-unsigned.apk
+The resulting production release version will be at:  wallet/build/outputs/apk/xazab-wallet-prod-release-unsigned.apk
 
 BUILDING ALL FLAVORS
 
 	# each time
-	cd dash-wallet
+	cd xazab-wallet
 	git pull
     gradle clean build assembleProdRelease
     gradle clean build assemble_testNet3Release
@@ -139,7 +139,7 @@ You should be able to import the project into Android Studio, as it uses Gradle 
 
 ### TRANSLATIONS
 
-The source language is English. Translations for all other languages [happen on Transifex](https://www.transifex.com/dash/dash-wallet/).
+The source language is English. Translations for all other languages [happen on Transifex](https://www.transifex.com/xazab/xazab-wallet/).
 
 The English resources are pushed to Transifex. Changes are pulled and committed to the git
 repository from time to time. It can be done by manually downloading the files, but using the `tx`
@@ -166,7 +166,7 @@ corrected manually.
 
 ### NFC (Near field communication)
 
-Dash Wallet supports reading Dash requests via NFC, either from a passive NFC tag or from
+Xazab Wallet supports reading Xazab requests via NFC, either from a passive NFC tag or from
 another NFC capable Android device that is requesting coins.
 
 For this to work, just enable NFC in your phone and hold your phone to the tag or device (with
@@ -179,24 +179,24 @@ Instructions for preparing an NFC tag with your address:
 
 - Some tags have less than 50 bytes capacity, those won't work. 1 KB tags recommended.
 
-- The tag needs to contain a Dash URI. You can construct one with the "Request coins" dialog,
+- The tag needs to contain a Xazab URI. You can construct one with the "Request coins" dialog,
   then share with messaging or email. You can also construct the URI manually. Mainnet example:
-  `dash:XywwpkwZYAypoW2cCmdczh4kFcvWWb9ZZW`
+  `xazab:XywwpkwZYAypoW2cCmdczh4kFcvWWb9ZZW`
 
 - The type of the message needs to be URI or URL (not Text).
 
 - If you put your tag at a public place, don't forget to enable write protect. Otherwise, someone
-  could overwrite the tag with his own Dash address.
+  could overwrite the tag with his own Xazab address.
 
 
-### DASHJ
+### XAZABJ
 
-Dash Wallet uses dashj for Dash specific logic.  This project is forked from [bitcoinj](https://bitcoinj.github.io/)
+Xazab Wallet uses xazabj for Xazab specific logic.  This project is forked from [bitcoinj](https://bitcoinj.github.io/)
 
 
 ### EXCHANGE RATES
 
-Dash Wallet reads this feed from "BitcoinAverage" for getting exchange rates:
+Xazab Wallet reads this feed from "BitcoinAverage" for getting exchange rates:
 
     https://apiv2.bitcoinaverage.com/indices/global/ticker/short?crypto=BTC
 
@@ -207,5 +207,5 @@ accurate compared to other services and apps.
 
 ### SWEEPING WALLETS
 
-When sweeping wallets, Dash Wallet uses a set of Electrum servers and block explorers to query for
+When sweeping wallets, Xazab Wallet uses a set of Electrum servers and block explorers to query for
 unspent transaction outputs (UTXOs).

@@ -104,7 +104,7 @@
             <intent-filter>
                 <action android:name="android.nfc.action.NDEF_DISCOVERED" />
                 <data android:mimeType="application/x-drktx" />
-                <data android:mimeType="application/x-dashtx" />
+                <data android:mimeType="application/x-xazabtx" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity-alias>
@@ -124,7 +124,7 @@
             <intent-filter android:label="@string/send_coins_activity_title" >
                 <action android:name="android.intent.action.VIEW" />
 
-                <data android:scheme="dash" />
+                <data android:scheme="xazab" />
                 <data android:scheme="darkcoin" />
                 <data android:scheme="pay" />
 
@@ -134,7 +134,7 @@
             <intent-filter android:label="@string/send_coins_activity_title" >
                 <action android:name="android.nfc.action.NDEF_DISCOVERED" />
 
-                <data android:scheme="dash" />
+                <data android:scheme="xazab" />
                 <data android:scheme="darkcoin" />
                 <data android:scheme="pay" />
 
@@ -185,7 +185,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
 
                 <data android:mimeType="application/x-darkcoin-wallet-backup" />
-                <data android:mimeType="application/x-dash-wallet-backup" />
+                <data android:mimeType="application/x-xazab-wallet-backup" />
             </intent-filter>
         </activity>
         <activity
@@ -208,17 +208,17 @@
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
-                <data android:scheme="dashwallet" />
+                <data android:scheme="xazabwallet" />
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
 
         </activity>
-        <activity android:name="org.dash.wallet.integration.uphold.ui.UpholdSplashActivity"
+        <activity android:name="xyz.xazab.wallet.integration.uphold.ui.UpholdSplashActivity"
             android:theme="@style/My.Theme.ChildActivity"
             android:launchMode="singleTask"/>
-        <activity android:name="org.dash.wallet.integration.uphold.ui.UpholdAccountActivity"
+        <activity android:name="xyz.xazab.wallet.integration.uphold.ui.UpholdAccountActivity"
             android:theme="@style/My.Theme.ChildActivity"/>
 
         <activity android:name="de.schildbach.wallet.ui.LockScreenActivity"

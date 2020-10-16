@@ -12,34 +12,34 @@ import retrofit2.http.GET;
 /**
  * @author Samuel Barbosa
  */
-public class DashCentralClient extends RetrofitClient {
+public class XazabCentralClient extends RetrofitClient {
 
-    private static DashCentralClient instance;
+    private static XazabCentralClient instance;
 
-    public static DashCentralClient getInstance() {
+    public static XazabCentralClient getInstance() {
         if (instance == null) {
-            instance = new DashCentralClient("https://www.dashcentral.org/");
+            instance = new XazabCentralClient("https://www.xazabcentral.org/");
         }
         return instance;
     }
 
-    private DashCentralService service;
+    private XazabCentralService service;
 
-    private DashCentralClient(String baseUrl) {
+    private XazabCentralClient(String baseUrl) {
         super(baseUrl);
 
-        Moshi moshi = moshiBuilder.add(new DashCentralRateAdapter()).build();
+        Moshi moshi = moshiBuilder.add(new XazabCentralRateAdapter()).build();
         retrofit = retrofitBuilder.addConverterFactory(MoshiConverterFactory.create(moshi)).build();
-        service = retrofit.create(DashCentralService.class);
+        service = retrofit.create(XazabCentralService.class);
     }
 
-    public Response<Rate> getDashBtcPrice() throws IOException {
-        return service.getDashBtcPrice().execute();
+    public Response<Rate> getXazabBtcPrice() throws IOException {
+        return service.getXazabBtcPrice().execute();
     }
 
-    private interface DashCentralService {
+    private interface XazabCentralService {
         @GET("api/v1/public")
-        Call<Rate> getDashBtcPrice();
+        Call<Rate> getXazabBtcPrice();
     }
 
 }

@@ -18,7 +18,7 @@
 		<item>µtXZB, no decimal places</item>
 	</string-array>
 	<string-array name="preferences_block_explorer_values">
-		<item>https://testnet-insight.dashevo.org/insight/</item>
+		<item>https://testnet-insight.xazab.org/insight/</item>
 	</string-array>
 	<string-array name="preferences_block_explorer_labels">
 		<item>Insight TestNet Block Explorer</item>

@@ -48,12 +48,12 @@ import de.schildbach.wallet.integration.android.BitcoinIntegration;
 public class SampleActivity extends Activity {
     private static final long AMOUNT = 500000;
     private static final String[] DONATION_ADDRESSES_MAINNET = {
-            "XorbXsc4bb8A6oGrJwiLwv91xTruKYJV1Y",  //Hash Engineering donation DASH address
+            "XorbXsc4bb8A6oGrJwiLwv91xTruKYJV1Y",  //Hash Engineering donation xazab address
             "Xdeh9YTLNtci5zSL4DDayRSVTLf299n9jv"
     };
     private static final String[] DONATION_ADDRESSES_TESTNET = {
             "yd8Q7MwTDe9yJdeMx1YSSYS4wdxQ2HDqTg",   // http://test.faucet.masternode.io/
-            "ye5F5rfx44YqvqCpVvi1SfFS4dvqaqyuDr"    // https://test.faucet.dashninja.pl/
+            "ye5F5rfx44YqvqCpVvi1SfFS4dvqaqyuDr"    // https://test.faucet.xazabninja.pl/
     };
     private static final String MEMO = "Sample donation";
     private static final String WALLET_URI_SCHEME = "xazabwallet";

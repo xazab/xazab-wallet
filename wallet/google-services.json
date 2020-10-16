@@ -1,9 +1,9 @@
 {
   "project_info": {
     "project_number": "1039839682638",
-    "firebase_url": "https://dash-wallet-firebase.firebaseio.com",
-    "project_id": "dash-wallet-firebase",
-    "storage_bucket": "dash-wallet-firebase.appspot.com"
+    "firebase_url": "https://xazab-wallet-firebase.firebaseio.com",
+    "project_id": "xazab-wallet-firebase",
+    "storage_bucket": "xazab-wallet-firebase.appspot.com"
   },
   "client": [
     {
@@ -97,7 +97,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:1039839682638:android:3cb62fcbd8b7d447",
         "android_client_info": {
-          "package_name": "hashengineering.dash.wallet.beta"
+          "package_name": "hashengineering.xazab.wallet.beta"
         }
       },
       "oauth_client": [

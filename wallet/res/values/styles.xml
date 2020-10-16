@@ -130,7 +130,7 @@
         <item name="android:layout_marginTop">2dp</item>
         <item name="android:layout_marginEnd">12dp</item>
         <item name="layout_constraintEnd_toEndOf">parent</item>
-        <item name="android:textColor">@color/dash_gray</item>
+        <item name="android:textColor">@color/xazab_gray</item>
         <item name="android:textSize">12sp</item>
     </style>
 

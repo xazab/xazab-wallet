@@ -7,17 +7,17 @@ import java.math.BigDecimal;
 /**
  * @author Samuel Barbosa
  */
-public class DashCasaResponse {
+public class XazabCasaResponse {
 
-    @Json(name = "dashrate")
-    private final BigDecimal dashVesPrice;
+    @Json(name = "xazabrate")
+    private final BigDecimal xazabVesPrice;
 
-    public DashCasaResponse(BigDecimal dashVesPrice) {
-        this.dashVesPrice = dashVesPrice;
+    public XazabCasaResponse(BigDecimal xazabVesPrice) {
+        this.xazabVesPrice = xazabVesPrice;
     }
 
-    public BigDecimal getDashVesPrice() {
-        return dashVesPrice;
+    public BigDecimal getXazabVesPrice() {
+        return xazabVesPrice;
     }
 
 }

@@ -74,12 +74,12 @@ public final class Constants {
                 break;
             }
             case "_testNet3": {
-                DNS_SEED = new String[]{"testnet-seed.dashdot.io", "95.183.51.146", "35.161.101.35", "54.91.130.170"};
+                DNS_SEED = new String[]{"testnet-seed.xazabdot.io", "95.183.51.146", "35.161.101.35", "54.91.130.170"};
                 BIP44_PATH = DeterministicKeyChain.BIP44_ACCOUNT_ZERO_PATH_TESTNET;
                 NETWORK_PARAMETERS = TestNet3Params.get();
                 IS_PROD_BUILD = false;
                 FILENAME_NETWORK_SUFFIX = "-testnet";
-                WALLET_NAME_CURRENCY_CODE = "tdash";
+                WALLET_NAME_CURRENCY_CODE = "txazab";
                 break;
             }
             case "devNet": {
@@ -91,7 +91,7 @@ public final class Constants {
                 NETWORK_PARAMETERS = DevNetParams.get("maithai", "yMtULrhoxd8vRZrsnFobWgRTidtjg2Rnjm", 20001, DNS_SEED);
                 IS_PROD_BUILD = false;
                 FILENAME_NETWORK_SUFFIX = "-devnet";
-                WALLET_NAME_CURRENCY_CODE = "tdash";
+                WALLET_NAME_CURRENCY_CODE = "txazab";
                 break;
 
             }
@@ -99,7 +99,7 @@ public final class Constants {
                 throw new IllegalStateException("Unsupported flavor " + BuildConfig.FLAVOR);
             }
         }
-        org.dash.wallet.common.Constants.MAX_MONEY = NETWORK_PARAMETERS.getMaxMoney();
+        xyz.xazab.wallet.common.Constants.MAX_MONEY = NETWORK_PARAMETERS.getMaxMoney();
     }
 
     /** Bitcoinj global context. */
@@ -233,8 +233,8 @@ public final class Constants {
     public static final int NOTIFICATION_ID_BLOCKCHAIN_SYNC = 3;
     public static final int NOTIFICATION_ID_UPGRADE_WALLET = 4;
 
-    public static String NOTIFICATION_CHANNEL_ID_TRANSACTIONS = "dash.notifications.transactions";
-    public static String NOTIFICATION_CHANNEL_ID_ONGOING = "dash.notifications.ongoing";
+    public static String NOTIFICATION_CHANNEL_ID_TRANSACTIONS = "xazab.notifications.transactions";
+    public static String NOTIFICATION_CHANNEL_ID_ONGOING = "xazab.notifications.ongoing";
 
     /** Desired number of scrypt iterations for deriving the spending PIN */
     public static final int SCRYPT_ITERATIONS_TARGET = 65536;
@@ -264,7 +264,7 @@ public final class Constants {
 
     private static final Logger log = LoggerFactory.getLogger(Constants.class);
 
-    //Dash Specific
+    //Xazab Specific
     public static long EARLIEST_HD_SEED_CREATION_TIME = 1427610960L;
 
     public static String WALLET_URI_SCHEME = "xazabwallet";

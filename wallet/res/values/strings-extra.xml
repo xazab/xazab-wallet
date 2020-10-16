@@ -108,7 +108,7 @@
     <string name="export_keys_dialog_title_to_seed">View Recovery Phrase</string>
     <string name="import_keys_dialog_title_from_seed">Restore from recovery phrase</string>
     <string name="backup_to_seed_wallet_dialog_message">This is your recovery phrase.  Please write it down.</string>
-    <string name="backup_wallet_to_seed_dialog_warning">DO NOT let anyone see your recovery phrase or they can spend your Dash.</string>
+    <string name="backup_wallet_to_seed_dialog_warning">DO NOT let anyone see your recovery phrase or they can spend your Xazab.</string>
     <string name="backup_to_seed_wallet_dialog_enter_pin_message">Your wallet is protected by a spending PIN.  Enter your PIN and press Show to view your recovery phrase.</string>
     <string name="import_keys_from_seed_dialog_message">Enter your recovery phrase here.</string>
     <string name="import_export_keys_dialog_password_phrase">Recovery phrase goes here.</string>
@@ -126,7 +126,7 @@
     <string name="send_coins_fragment_hint_fee_zero">No fee of will be paid. Use \'no fee\' only if you don\'t care about confirmation time.</string>
 
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
-    <string name="wallet_uri_handler_public_key_request_dialog_msg">Application %s would like to receive your Master Public Key.  This can be used to keep track of your wallet, this can not be used to move your Dash.</string>
+    <string name="wallet_uri_handler_public_key_request_dialog_msg">Application %s would like to receive your Master Public Key.  This can be used to keep track of your wallet, this can not be used to move your Xazab.</string>
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
     <string name="wallet_uri_handler_address_request_dialog_msg">Application %s is requesting an address so it can pay you.  Would you like to authorize this?</string>
 
@@ -137,7 +137,7 @@
     <string name="wallet_lock_unlock_dialog_title">Unlock your wallet</string>
     <string name="wallet_lock_unlock_dialog_message">Your wallet is protected by a spending PIN. Enter your PIN and press Unlock to continue.</string>
     <string name="wallet_lock_reset_wallet_title">Reset Wallet</string>
-    <string name="wallet_lock_reset_wallet_message">Are you sure? Your wallet will be deleted and all your Dash will be lost.\n\nThe only way to recover your Dash is with a backup file or recovery phrase.</string>
+    <string name="wallet_lock_reset_wallet_message">Are you sure? Your wallet will be deleted and all your Xazab will be lost.\n\nThe only way to recover your Xazab is with a backup file or recovery phrase.</string>
 
     <string name="wallet_lock_wallet_disabled">Wallet disabled</string>
     <string name="wallet_lock_try_again">Try again in %1$d %2$s</string>
@@ -205,7 +205,7 @@
     <string name="verify_it_is_important_subtitle">We are about to show you the secret key to your wallet.</string>
     <string name="verify_info_text_1">This recovery phrase is your access to the funds in this wallet.</string>
     <string name="verify_info_text_2">We do not store this recovery phrase.</string>
-    <string name="verify_info_text_3">You will need this recovery phrase to access your funds if this device is lost, damaged or if Dash Wallet ever is accidentally uninstalled from this device.</string>
+    <string name="verify_info_text_3">You will need this recovery phrase to access your funds if this device is lost, damaged or if Xazab Wallet ever is accidentally uninstalled from this device.</string>
     <string name="verify_skip">Skip</string>
     <string name="verify_secure_now_btn">Secure now</string>
     <string name="verify_secure_now_message">If you lose this device, you will lose your funds. Get your recovery phrase so that you can restore your wallet on another device.</string>
@@ -258,8 +258,8 @@
     <string name="about_fork_disclaimer">This is an open source app forked from Bitcoin Wallet</string>
     <string name="about_copyright" translatable="false">Copyright © 2020 Xazab Core</string>
     <string name="about_license">GNU General Public License v3.0</string>
-    <string name="about_github_link" translatable="false">https://github.com/dashevo/dash-wallet</string>
-    <string name="about_version_name">Dash Wallet %s</string>
+    <string name="about_github_link" translatable="false">https://github.com/xazab/xazab-wallet</string>
+    <string name="about_version_name">Xazab Wallet %s</string>
 
     <string name="block">Block</string>
     <string name="time">Time</string>
@@ -267,7 +267,7 @@
     <string name="block_info">Block Info</string>
 
     <string name="scan_private_key">Scan Private Key</string>
-    <string name="scan_private_key_intro_1">You are about to sweep funds from a Dash paper wallet.</string>
+    <string name="scan_private_key_intro_1">You are about to sweep funds from a Xazab paper wallet.</string>
     <string name="scan_private_key_intro_2">This will move all coins from that wallet to your wallet on this device.</string>
     <string name="scan_private_key_intro_3">When the transaction is confirmed, the other wallet will be worthless and should not be re-used for safety reasons.</string>
     <string name="confirm">Confirm</string>
@@ -312,7 +312,7 @@
 
     <string name="sync_status_wait">Please wait for the sync to complete</string>
     <string name="sync_status_syncing_title">Syncing</string>
-    <string name="sync_status_syncing_sub_title">with Dash blockchain</string>
+    <string name="sync_status_syncing_sub_title">with Xazab blockchain</string>
     <string name="sync_status_unable_to_connect">Unable to connect</string>
     <string name="sync_status_check_connection">Check your connection</string>
     <string name="sync_status_sync_title">Sync</string>

@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 /**
  * @author Samuel Barbosa
  */
-public class DashCentralRateAdapter {
+public class XazabCentralRateAdapter {
 
     @ToJson
     String toJson(Rate rate) {
@@ -27,7 +27,7 @@ public class DashCentralRateAdapter {
             if (jsonReader.nextName().equalsIgnoreCase("exchange_rates")) {
                 jsonReader.beginObject();
                 while (jsonReader.hasNext()) {
-                    if (jsonReader.nextName().equalsIgnoreCase("btc_dash")) {
+                    if (jsonReader.nextName().equalsIgnoreCase("btc_xazab")) {
                         rate = new Rate(new BigDecimal(jsonReader.nextString()));
                     } else {
                         jsonReader.skipValue();

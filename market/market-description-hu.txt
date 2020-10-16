@@ -14,13 +14,13 @@ A forráskódunk elérhető a GitHub-on:
 https://github.com/HashEngineering/darkcoin-wallet
 
 Minden fordítást a Transifex kezelt:
-https://www.transifex.com/dash/dash-wallet/
+https://www.transifex.com/xazab/xazab-wallet/
 
 
 <b>AJÁNLÓLEVELEK</b>
 
 • Sok mobiltárca a Bitcoin Wallet-re alapozza a kódját. Például: blockchain.info és BTCX.
-• Ajánlott mobiltárca a https://dash.org által
+• Ajánlott mobiltárca a https://xazab.xyz által
 • Ajánlva a BitPay által.
 
 

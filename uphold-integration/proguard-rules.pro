@@ -1,8 +1,8 @@
 -keepattributes Exceptions, InnerClasses
--keep class org.dash.wallet.integration.uphold.** {
+-keep class xyz.xazab.wallet.integration.uphold.** {
     public protected private *;
 }
--keep interface org.dash.wallet.integration.uphold.** {*;}
+-keep interface xyz.xazab.wallet.integration.uphold.** {*;}
 
 #OkHttp
 -dontwarn com.squareup.okhttp.**

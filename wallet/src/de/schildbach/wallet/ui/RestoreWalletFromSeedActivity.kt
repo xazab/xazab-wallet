@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group
+ * Copyright 2019 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,7 +32,7 @@ import de.schildbach.wallet_test.R
 import kotlinx.android.synthetic.main.activity_recover_wallet_from_seed.*
 import org.bitcoinj.crypto.MnemonicCode
 import org.bitcoinj.crypto.MnemonicException
-import org.dash.wallet.common.ui.DialogBuilder
+import xyz.xazab.wallet.common.ui.DialogBuilder
 import org.slf4j.LoggerFactory
 import java.util.*
 

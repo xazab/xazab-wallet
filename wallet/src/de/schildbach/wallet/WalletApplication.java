@@ -62,9 +62,9 @@ import org.bitcoinj.wallet.Protos;
 import org.bitcoinj.wallet.UnreadableWalletException;
 import org.bitcoinj.wallet.Wallet;
 import org.bitcoinj.wallet.WalletProtobufSerializer;
-import org.dash.wallet.common.Configuration;
-import org.dash.wallet.common.ResetAutoLogoutTimerHandler;
-import org.dash.wallet.integration.uphold.data.UpholdClient;
+import xyz.xazab.wallet.common.Configuration;
+import xyz.xazab.wallet.common.ResetAutoLogoutTimerHandler;
+import xyz.xazab.wallet.integration.uphold.data.UpholdClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -260,7 +260,7 @@ public class WalletApplication extends MultiDexApplication implements ResetAutoL
     }
 
     public void finalizeInitialization() {
-        wallet.getContext().initDash(true, true);
+        wallet.getContext().initXazab(true, true);
 
         if (config.versionCodeCrossed(packageInfo.versionCode, VERSION_CODE_SHOW_BACKUP_REMINDER)
                 && !wallet.getImportedKeys().isEmpty()) {
@@ -679,7 +679,7 @@ public class WalletApplication extends MultiDexApplication implements ResetAutoL
 
     /**
      * Low memory devices (currently 1GB or less) and 32 bit devices will require
-     * fewer scrypt hashes on the PIN+salt (handled by dashj)
+     * fewer scrypt hashes on the PIN+salt (handled by xazabj)
      *
      * @return The number of scrypt interations
      */
