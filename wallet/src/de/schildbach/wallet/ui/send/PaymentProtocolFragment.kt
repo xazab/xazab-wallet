@@ -42,7 +42,7 @@ import org.bitcoinj.core.Transaction
 import org.bitcoinj.protocols.payments.PaymentProtocolException
 import org.bitcoinj.utils.MonetaryFormat
 import org.bitcoinj.wallet.SendRequest
-import xyz.xazab.wallet.common.util.GenericUtils
+import org.xazab.wallet.common.util.GenericUtils
 import org.slf4j.LoggerFactory
 
 class PaymentProtocolFragment : Fragment() {

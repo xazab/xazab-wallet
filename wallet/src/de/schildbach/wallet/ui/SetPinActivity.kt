@@ -33,7 +33,7 @@ import de.schildbach.wallet.ui.preference.PinRetryController
 import de.schildbach.wallet.ui.widget.NumericKeyboardView
 import de.schildbach.wallet.ui.widget.PinPreviewView
 import de.schildbach.wallet_test.R
-import xyz.xazab.wallet.common.InteractionAwareActivity
+import org.xazab.wallet.common.InteractionAwareActivity
 
 class SetPinActivity : InteractionAwareActivity() {
 

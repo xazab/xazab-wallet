@@ -32,7 +32,7 @@ import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.ViewModelProviders;
 
-import xyz.xazab.wallet.common.ui.DialogBuilder;
+import org.xazab.wallet.common.ui.DialogBuilder;
 
 import de.schildbach.wallet.WalletApplication;
 import de.schildbach.wallet.ui.widget.FingerprintView;

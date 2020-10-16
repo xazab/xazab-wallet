@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/transparent_button_background"
     android:orientation="vertical"
-    tools:context="xyz.xazab.wallet.ui.widget.LockScreenButton"
+    tools:context="org.xazab.wallet.ui.widget.LockScreenButton"
     tools:ignore="UseCompoundDrawables"
     tools:parentTag="android.widget.LinearLayout">
 

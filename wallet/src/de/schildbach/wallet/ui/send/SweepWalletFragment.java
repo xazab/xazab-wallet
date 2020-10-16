@@ -62,9 +62,9 @@ import org.bitcoinj.wallet.SendRequest;
 import org.bitcoinj.wallet.Wallet;
 import org.bitcoinj.wallet.Wallet.BalanceType;
 import org.bitcoinj.wallet.WalletTransaction;
-import xyz.xazab.wallet.common.Configuration;
-import xyz.xazab.wallet.common.ui.CurrencyTextView;
-import xyz.xazab.wallet.common.ui.DialogBuilder;
+import org.xazab.wallet.common.Configuration;
+import org.xazab.wallet.common.ui.CurrencyTextView;
+import org.xazab.wallet.common.ui.DialogBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

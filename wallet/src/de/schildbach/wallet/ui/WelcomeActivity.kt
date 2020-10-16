@@ -27,7 +27,7 @@ import androidx.viewpager.widget.ViewPager
 import de.schildbach.wallet.WalletApplication
 import de.schildbach.wallet_test.R
 import kotlinx.android.synthetic.main.activity_welcome.*
-import xyz.xazab.wallet.common.Configuration
+import org.xazab.wallet.common.Configuration
 
 /**
  * @author Samuel Barbosa

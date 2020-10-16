@@ -1,4 +1,4 @@
-package xyz.xazab.wallet.ui.widget;
+package org.xazab.wallet.ui.widget;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("xyz.xazab.wallet.ui.widget.test", appContext.getPackageName());
+        assertEquals("org.xazab.wallet.ui.widget.test", appContext.getPackageName());
     }
 }

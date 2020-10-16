@@ -24,8 +24,8 @@ import androidx.annotation.LayoutRes
 import androidx.appcompat.widget.Toolbar
 import de.schildbach.wallet.WalletApplication
 import de.schildbach.wallet_test.R
-import xyz.xazab.wallet.common.Configuration
-import xyz.xazab.wallet.common.InteractionAwareActivity
+import org.xazab.wallet.common.Configuration
+import org.xazab.wallet.common.InteractionAwareActivity
 
 /**
  * @author Samuel Barbosa

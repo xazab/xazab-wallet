@@ -37,7 +37,7 @@ import org.bitcoinj.core.Address
 import org.bitcoinj.core.Coin
 import org.bitcoinj.uri.BitcoinURI
 import org.bitcoinj.uri.BitcoinURIParseException
-import xyz.xazab.wallet.common.Configuration
+import org.xazab.wallet.common.Configuration
 import org.slf4j.LoggerFactory
 
 

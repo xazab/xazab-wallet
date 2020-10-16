@@ -61,7 +61,7 @@
             android:scaleType="centerInside"
             app:srcCompat="@drawable/ic_xazab_symbol_gray" />
 
-        <xyz.xazab.wallet.common.ui.CurrencyTextView
+        <org.xazab.wallet.common.ui.CurrencyTextView
             android:id="@+id/xazab_amount"
             style="@style/MontserratSemiBold.MG"
             android:layout_width="wrap_content"
@@ -71,7 +71,7 @@
 
     </LinearLayout>
 
-    <xyz.xazab.wallet.common.ui.CurrencyTextView
+    <org.xazab.wallet.common.ui.CurrencyTextView
         android:id="@+id/fiat_value"
         style="@style/MontserratRegular.MG"
         android:layout_width="wrap_content"
@@ -221,7 +221,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <xyz.xazab.wallet.common.ui.CurrencyTextView
+            <org.xazab.wallet.common.ui.CurrencyTextView
                 android:id="@+id/transaction_fee"
                 style="@style/MontserratRegular.MG"
                 android:layout_width="wrap_content"

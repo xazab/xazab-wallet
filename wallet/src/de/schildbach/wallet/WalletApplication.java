@@ -62,9 +62,9 @@ import org.bitcoinj.wallet.Protos;
 import org.bitcoinj.wallet.UnreadableWalletException;
 import org.bitcoinj.wallet.Wallet;
 import org.bitcoinj.wallet.WalletProtobufSerializer;
-import xyz.xazab.wallet.common.Configuration;
-import xyz.xazab.wallet.common.ResetAutoLogoutTimerHandler;
-import xyz.xazab.wallet.integration.uphold.data.UpholdClient;
+import org.xazab.wallet.common.Configuration;
+import org.xazab.wallet.common.ResetAutoLogoutTimerHandler;
+import org.xazab.wallet.integration.uphold.data.UpholdClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -83,7 +83,7 @@ class ShortcutsPane(context: Context, attrs: AttributeSet) : LinearLayout(contex
     private var onShortcutClickListener: OnClickListener? = null
 
     init {
-        setBackgroundResource(xyz.xazab.wallet.ui.widget.R.drawable.white_background_rounded)
+        setBackgroundResource(org.xazab.wallet.ui.widget.R.drawable.white_background_rounded)
         minimumHeight = 180
         orientation = HORIZONTAL
         gravity = Gravity.CENTER_HORIZONTAL

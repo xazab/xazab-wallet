@@ -26,7 +26,7 @@ import androidx.lifecycle.ViewModelProviders
 import de.schildbach.wallet.WalletApplication
 import de.schildbach.wallet.livedata.Status
 import de.schildbach.wallet_test.R
-import xyz.xazab.wallet.common.InteractionAwareActivity
+import org.xazab.wallet.common.InteractionAwareActivity
 
 /**
  * @author Samuel Barbosa

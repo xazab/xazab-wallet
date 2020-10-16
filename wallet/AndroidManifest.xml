@@ -215,10 +215,10 @@
             </intent-filter>
 
         </activity>
-        <activity android:name="xyz.xazab.wallet.integration.uphold.ui.UpholdSplashActivity"
+        <activity android:name="org.xazab.wallet.integration.uphold.ui.UpholdSplashActivity"
             android:theme="@style/My.Theme.ChildActivity"
             android:launchMode="singleTask"/>
-        <activity android:name="xyz.xazab.wallet.integration.uphold.ui.UpholdAccountActivity"
+        <activity android:name="org.xazab.wallet.integration.uphold.ui.UpholdAccountActivity"
             android:theme="@style/My.Theme.ChildActivity"/>
 
         <activity android:name="de.schildbach.wallet.ui.LockScreenActivity"

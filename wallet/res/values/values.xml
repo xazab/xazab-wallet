@@ -22,7 +22,7 @@
 		<item>@string/preferences_precision_labels_0_6</item>
 	</string-array>
 	<string-array name="preferences_block_explorer_values">
-		<item>http://explorer.xazab.xyz/insight/</item>
+		<item>http://explorer.xazab.xyz/</item>
 		<item>http://explorer.xazab.tech/chain/Xazab/</item>
 	</string-array>
 	<string-array name="preferences_block_explorer_labels">

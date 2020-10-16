@@ -33,7 +33,7 @@ import de.schildbach.wallet.WalletApplication
 import de.schildbach.wallet.ui.widget.UpgradeWalletDisclaimerDialog
 import de.schildbach.wallet_test.R
 import org.bitcoinj.wallet.Wallet
-import xyz.xazab.wallet.common.ui.DialogBuilder
+import org.xazab.wallet.common.ui.DialogBuilder
 
 
 @SuppressLint("Registered")

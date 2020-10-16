@@ -80,7 +80,7 @@ import org.bitcoinj.utils.ExchangeRate;
 import org.bitcoinj.utils.MonetaryFormat;
 import org.bitcoinj.utils.Threading;
 import org.bitcoinj.wallet.Wallet;
-import xyz.xazab.wallet.common.Configuration;
+import org.xazab.wallet.common.Configuration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -118,7 +118,7 @@ import de.schildbach.wallet.util.ThrottlingWalletChangeListener;
 import de.schildbach.wallet.util.WalletUtils;
 import de.schildbach.wallet_test.R;
 
-import static xyz.xazab.wallet.common.Constants.PREFIX_ALMOST_EQUAL_TO;
+import static org.xazab.wallet.common.Constants.PREFIX_ALMOST_EQUAL_TO;
 
 /**
  * @author Andreas Schildbach

@@ -19,7 +19,7 @@ package de.schildbach.wallet;
 import android.content.SharedPreferences;
 import android.os.Handler;
 
-import xyz.xazab.wallet.common.Configuration;
+import org.xazab.wallet.common.Configuration;
 
 import java.util.concurrent.TimeUnit;
 

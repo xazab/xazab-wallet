@@ -43,7 +43,7 @@ import de.schildbach.wallet.util.FingerprintHelper
 import de.schildbach.wallet_test.R
 import kotlinx.android.synthetic.main.activity_lock_screen.*
 import org.bitcoinj.wallet.Wallet.BalanceType
-import xyz.xazab.wallet.common.ui.DialogBuilder
+import org.xazab.wallet.common.ui.DialogBuilder
 import java.util.concurrent.TimeUnit
 
 

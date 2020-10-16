@@ -85,7 +85,7 @@
             android:layout_marginEnd="4dp"
             app:srcCompat="@drawable/ic_xazab_symbol_gray" />
 
-        <xyz.xazab.wallet.common.ui.CurrencyTextView
+        <org.xazab.wallet.common.ui.CurrencyTextView
             android:id="@+id/transaction_row_value"
             style="@style/MontserratMedium"
             android:layout_width="wrap_content"
@@ -105,7 +105,7 @@
         android:paddingStart="0dp"
         android:paddingEnd="15dp">
 
-        <xyz.xazab.wallet.common.ui.CurrencyTextView
+        <org.xazab.wallet.common.ui.CurrencyTextView
             android:id="@+id/transaction_row_fiat"
             style="@style/MontserratMedium.MG.12"
             android:layout_width="wrap_content"

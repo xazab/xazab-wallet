@@ -4,7 +4,7 @@ import androidx.annotation.Nullable;
 
 import com.squareup.moshi.Moshi;
 
-import xyz.xazab.wallet.common.data.BigDecimalAdapter;
+import org.xazab.wallet.common.data.BigDecimalAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

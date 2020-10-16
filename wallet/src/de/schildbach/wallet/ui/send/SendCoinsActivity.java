@@ -29,7 +29,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import org.bitcoinj.core.CoinDefinition;
 import org.bitcoinj.protocols.payments.PaymentProtocol;
-import xyz.xazab.wallet.common.ui.DialogBuilder;
+import org.xazab.wallet.common.ui.DialogBuilder;
 
 import de.schildbach.wallet.data.PaymentIntent;
 import de.schildbach.wallet.integration.android.BitcoinIntegration;

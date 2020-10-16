@@ -27,7 +27,7 @@ import de.schildbach.wallet.data.BlockchainState
 import de.schildbach.wallet.util.showBlockchainSyncingMessage
 import de.schildbach.wallet_test.R
 import kotlinx.android.synthetic.main.activity_more.*
-import xyz.xazab.wallet.integration.uphold.ui.UpholdAccountActivity
+import org.xazab.wallet.integration.uphold.ui.UpholdAccountActivity
 
 class MoreActivity : GlobalFooterActivity() {
 

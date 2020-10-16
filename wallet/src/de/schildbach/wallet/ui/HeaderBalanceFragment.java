@@ -36,9 +36,9 @@ import androidx.loader.content.Loader;
 import org.bitcoinj.core.Coin;
 import org.bitcoinj.utils.Fiat;
 import org.bitcoinj.wallet.Wallet;
-import xyz.xazab.wallet.common.Configuration;
-import xyz.xazab.wallet.common.ui.CurrencyTextView;
-import xyz.xazab.wallet.common.util.GenericUtils;
+import org.xazab.wallet.common.Configuration;
+import org.xazab.wallet.common.ui.CurrencyTextView;
+import org.xazab.wallet.common.util.GenericUtils;
 
 import javax.annotation.Nullable;
 

@@ -32,7 +32,7 @@ import de.schildbach.wallet_test.R
 import kotlinx.android.synthetic.main.activity_recover_wallet_from_seed.*
 import org.bitcoinj.crypto.MnemonicCode
 import org.bitcoinj.crypto.MnemonicException
-import xyz.xazab.wallet.common.ui.DialogBuilder
+import org.xazab.wallet.common.ui.DialogBuilder
 import org.slf4j.LoggerFactory
 import java.util.*
 

@@ -29,7 +29,7 @@ import de.schildbach.wallet.util.*
 import de.schildbach.wallet_test.R
 import org.bitcoinj.core.Address
 import org.bitcoinj.core.Transaction
-import xyz.xazab.wallet.common.ui.CurrencyTextView
+import org.xazab.wallet.common.ui.CurrencyTextView
 
 /**
  * @author Samuel Barbosa

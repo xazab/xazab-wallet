@@ -29,7 +29,7 @@ import kotlinx.android.synthetic.main.dialog_receive_details.*
 import org.bitcoinj.core.Coin
 import org.bitcoinj.utils.Fiat
 import org.bitcoinj.utils.MonetaryFormat
-import xyz.xazab.wallet.common.util.GenericUtils
+import org.xazab.wallet.common.util.GenericUtils
 
 private const val ARG_XAZAB_AMOUNT = "arg_xazab_amount"
 private const val ARG_FIAT_AMOUNT = "arg_fiat_amount"

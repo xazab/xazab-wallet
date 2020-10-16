@@ -32,7 +32,7 @@ import org.bitcoinj.core.Coin
 import org.bitcoinj.core.Monetary
 import org.bitcoinj.utils.Fiat
 import org.bitcoinj.utils.MonetaryFormat
-import xyz.xazab.wallet.common.util.GenericUtils
+import org.xazab.wallet.common.util.GenericUtils
 
 class EnterAmountFragment : Fragment() {
 

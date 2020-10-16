@@ -39,9 +39,9 @@ import org.bitcoinj.utils.ExchangeRate;
 import org.bitcoinj.utils.MonetaryFormat;
 import org.bitcoinj.wallet.Wallet;
 import org.bitcoinj.wallet.ZeroConfCoinSelector;
-import xyz.xazab.wallet.common.ui.CurrencyTextView;
-import xyz.xazab.wallet.common.ui.Formats;
-import xyz.xazab.wallet.common.util.GenericUtils;
+import org.xazab.wallet.common.ui.CurrencyTextView;
+import org.xazab.wallet.common.ui.Formats;
+import org.xazab.wallet.common.util.GenericUtils;
 
 import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.WalletApplication;
@@ -366,10 +366,10 @@ public class TransactionsAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             xazabSymbolView.setColorFilter(valueColor);
 
             if(value.isPositive()) {
-                signalView.setText(String.format("%c", xyz.xazab.wallet.common.Constants.CURRENCY_PLUS_SIGN));
+                signalView.setText(String.format("%c", org.xazab.wallet.common.Constants.CURRENCY_PLUS_SIGN));
                 valueView.setAmount(value);
             } else if(value.isNegative()) {
-                signalView.setText(String.format("%c", xyz.xazab.wallet.common.Constants.CURRENCY_MINUS_SIGN));
+                signalView.setText(String.format("%c", org.xazab.wallet.common.Constants.CURRENCY_MINUS_SIGN));
                 valueView.setAmount(value.negate());
             } else {
                 valueView.setAmount(Coin.ZERO);

@@ -26,7 +26,7 @@ import androidx.core.os.CancellationSignal;
 import androidx.fragment.app.DialogFragment;
 
 import org.bitcoinj.wallet.Wallet;
-import xyz.xazab.wallet.common.ui.DialogBuilder;
+import org.xazab.wallet.common.ui.DialogBuilder;
 
 import de.schildbach.wallet.WalletApplication;
 import de.schildbach.wallet.ui.preference.PinRetryController;

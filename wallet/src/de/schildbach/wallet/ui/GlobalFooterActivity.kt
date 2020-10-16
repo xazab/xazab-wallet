@@ -20,7 +20,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import de.schildbach.wallet.ui.widget.GlobalFooterView
 import de.schildbach.wallet_test.R
-import xyz.xazab.wallet.common.InteractionAwareActivity
+import org.xazab.wallet.common.InteractionAwareActivity
 
 
 @SuppressLint("Registered")

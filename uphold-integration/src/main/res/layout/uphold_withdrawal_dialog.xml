@@ -40,7 +40,7 @@
 
         </LinearLayout>
 
-        <xyz.xazab.wallet.common.ui.CurrencyAmountView
+        <org.xazab.wallet.common.ui.CurrencyAmountView
             android:id="@+id/send_coins_amount_xazab"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -55,7 +55,7 @@
                 style="@style/MontserratRegular"
                 tools:ignore="TextFields" />
 
-        </xyz.xazab.wallet.common.ui.CurrencyAmountView>
+        </org.xazab.wallet.common.ui.CurrencyAmountView>
 
     </LinearLayout>
 

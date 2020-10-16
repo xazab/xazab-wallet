@@ -22,9 +22,9 @@ import javax.annotation.Nullable;
 import org.bitcoinj.core.Coin;
 import org.bitcoinj.utils.Fiat;
 import org.bitcoinj.wallet.Wallet;
-import xyz.xazab.wallet.common.ui.CurrencyTextView;
+import org.xazab.wallet.common.ui.CurrencyTextView;
 
-import xyz.xazab.wallet.common.Configuration;
+import org.xazab.wallet.common.Configuration;
 
 import de.schildbach.wallet.AppDatabase;
 import de.schildbach.wallet.Constants;
@@ -48,7 +48,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import static xyz.xazab.wallet.common.Constants.PREFIX_ALMOST_EQUAL_TO;
+import static org.xazab.wallet.common.Constants.PREFIX_ALMOST_EQUAL_TO;
 
 /**
  * @author Andreas Schildbach

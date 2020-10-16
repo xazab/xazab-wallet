@@ -146,7 +146,7 @@
                         android:tint="@color/darkest_blue"
                         app:srcCompat="@drawable/ic_xazab_d_white_bottom" />
 
-                    <xyz.xazab.wallet.common.ui.CurrencyTextView
+                    <org.xazab.wallet.common.ui.CurrencyTextView
                         android:id="@+id/sweep_wallet_fragment_balance"
                         style="@style/MontserratRegular.DB"
                         android:layout_width="wrap_content"

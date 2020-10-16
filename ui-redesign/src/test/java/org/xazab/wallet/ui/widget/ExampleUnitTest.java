@@ -1,4 +1,4 @@
-package xyz.xazab.wallet.ui.widget;
+package org.xazab.wallet.ui.widget;
 
 import org.junit.Test;
 

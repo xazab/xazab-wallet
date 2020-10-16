@@ -34,8 +34,8 @@ import androidx.appcompat.app.AlertDialog;
 import com.google.common.base.Charsets;
 
 import org.bitcoinj.wallet.Wallet;
-import xyz.xazab.wallet.common.Configuration;
-import xyz.xazab.wallet.common.ui.DialogBuilder;
+import org.xazab.wallet.common.Configuration;
+import org.xazab.wallet.common.ui.DialogBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -67,10 +67,10 @@ import org.bitcoinj.core.Transaction;
 import org.bitcoinj.core.VerificationException;
 import org.bitcoinj.crypto.ChildNumber;
 import org.bitcoinj.wallet.Wallet;
-import xyz.xazab.wallet.common.Configuration;
-import xyz.xazab.wallet.common.data.CurrencyInfo;
-import xyz.xazab.wallet.common.ui.DialogBuilder;
-import xyz.xazab.wallet.integration.uphold.ui.UpholdAccountActivity;
+import org.xazab.wallet.common.Configuration;
+import org.xazab.wallet.common.data.CurrencyInfo;
+import org.xazab.wallet.common.ui.DialogBuilder;
+import org.xazab.wallet.integration.uphold.ui.UpholdAccountActivity;
 
 import java.io.IOException;
 import java.util.Currency;

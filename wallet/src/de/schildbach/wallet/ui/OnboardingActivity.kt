@@ -35,7 +35,7 @@ import de.schildbach.wallet.ui.security.SecurityGuard
 import de.schildbach.wallet_test.R
 import kotlinx.android.synthetic.main.activity_onboarding.*
 import kotlinx.android.synthetic.main.activity_onboarding_perm_lock.*
-import xyz.xazab.wallet.common.ui.DialogBuilder
+import org.xazab.wallet.common.ui.DialogBuilder
 
 private const val REGULAR_FLOW_TUTORIAL_REQUEST_CODE = 0
 

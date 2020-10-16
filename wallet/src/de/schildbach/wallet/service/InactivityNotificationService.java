@@ -24,7 +24,7 @@ import org.bitcoinj.wallet.Wallet.BalanceType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import xyz.xazab.wallet.common.Configuration;
+import org.xazab.wallet.common.Configuration;
 import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.WalletApplication;
 import de.schildbach.wallet.ui.OnboardingActivity;

@@ -46,8 +46,8 @@ import androidx.fragment.app.FragmentManager;
 
 import org.bitcoinj.wallet.DeterministicSeed;
 import org.bitcoinj.wallet.Wallet;
-import xyz.xazab.wallet.common.Configuration;
-import xyz.xazab.wallet.common.ui.DialogBuilder;
+import org.xazab.wallet.common.Configuration;
+import org.xazab.wallet.common.ui.DialogBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.bouncycastle.crypto.params.KeyParameter;

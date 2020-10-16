@@ -23,7 +23,7 @@ import de.schildbach.wallet.WalletApplication
 import de.schildbach.wallet_test.R
 import kotlinx.android.synthetic.main.activity_more.*
 import kotlinx.android.synthetic.main.activity_settings.*
-import xyz.xazab.wallet.common.ui.DialogBuilder
+import org.xazab.wallet.common.ui.DialogBuilder
 import org.slf4j.LoggerFactory
 
 class SettingsActivity : BaseMenuActivity() {

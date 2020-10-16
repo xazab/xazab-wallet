@@ -33,7 +33,7 @@
                     android:layout_marginRight="4dp"
                     android:src="@drawable/ic_xazab_d_white_bottom"/>
 
-                <xyz.xazab.wallet.common.ui.CurrencyTextView
+                <org.xazab.wallet.common.ui.CurrencyTextView
                     android:id="@+id/wallet_balance_btc"
                     android:maxLength="7"
                     app:fontFamily="@font/montserrat_regular"
@@ -47,7 +47,7 @@
 
             </LinearLayout>
 
-            <xyz.xazab.wallet.common.ui.CurrencyTextView
+            <org.xazab.wallet.common.ui.CurrencyTextView
                 android:id="@+id/wallet_balance_local"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

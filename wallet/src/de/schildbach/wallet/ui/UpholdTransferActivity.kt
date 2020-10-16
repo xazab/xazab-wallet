@@ -34,11 +34,11 @@ import de.schildbach.wallet.ui.send.EnterAmountSharedViewModel
 import de.schildbach.wallet_test.R
 import org.bitcoinj.core.Coin
 import org.bitcoinj.utils.MonetaryFormat
-import xyz.xazab.wallet.common.InteractionAwareActivity
-import xyz.xazab.wallet.common.util.GenericUtils
-import xyz.xazab.wallet.integration.uphold.data.UpholdTransaction
-import xyz.xazab.wallet.integration.uphold.ui.UpholdWithdrawalHelper
-import xyz.xazab.wallet.integration.uphold.ui.UpholdWithdrawalHelper.OnTransferListener
+import org.xazab.wallet.common.InteractionAwareActivity
+import org.xazab.wallet.common.util.GenericUtils
+import org.xazab.wallet.integration.uphold.data.UpholdTransaction
+import org.xazab.wallet.integration.uphold.ui.UpholdWithdrawalHelper
+import org.xazab.wallet.integration.uphold.ui.UpholdWithdrawalHelper.OnTransferListener
 import java.math.BigDecimal
 
 class UpholdTransferActivity : InteractionAwareActivity() {
