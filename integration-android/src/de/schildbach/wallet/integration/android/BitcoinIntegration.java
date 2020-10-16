@@ -262,9 +262,9 @@ public final class BitcoinIntegration {
                 .show();
 
         final Intent marketIntent = new Intent(Intent.ACTION_VIEW,
-                Uri.parse("market://details?id=hashengineering.darkcoin.wallet"));
+                Uri.parse("market://details?id=edirin.darkcoin.wallet"));
         final Intent binaryIntent = new Intent(Intent.ACTION_VIEW,
-                Uri.parse("https://github.com/HashEngineering/xazab-wallet/releases"));
+                Uri.parse("https://github.com/xazab/xazab-wallet/releases"));
 
         final PackageManager pm = context.getPackageManager();
         if (pm.resolveActivity(marketIntent, 0) != null)

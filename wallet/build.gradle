@@ -177,16 +177,16 @@ android {
     flavorDimensions "default"
     productFlavors {
         beta {
-            applicationId = "hashengineering.xazab.wallet.beta"
+            applicationId = "edirin.xazab.wallet.beta"
         }
         prod {
-            applicationId = "hashengineering.darkcoin.wallet"
+            applicationId = "edirin.darkcoin.wallet"
         }
         _testNet3 {
-            applicationId = "hashengineering.darkcoin.wallet_test"
+            applicationId = "edirin.darkcoin.wallet_test"
         }
         devNet {
-            applicationId = "hashengineering.darkcoin.wallet.devnet"
+            applicationId = "edirin.darkcoin.wallet.devnet"
         }
     }
     externalNativeBuild {

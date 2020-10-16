@@ -6,16 +6,16 @@ Technical details
 Your wallet contains your private keys and various transaction related metadata. It is stored in app-private
 storage:
 
-	Mainnet: /data/data/hashengineering.darkcoin.wallet/files/wallet-protobuf (MODE_PRIVATE)
-	Testnet: /data/data/hashengineering.darkcoin.wallet_test/files/wallet-protobuf-testnet (MODE_WORLD_READABLE | MODE_WORLD_WRITEABLE)
+	Mainnet: /data/data/edirin.darkcoin.wallet/files/wallet-protobuf (MODE_PRIVATE)
+	Testnet: /data/data/edirin.darkcoin.wallet_test/files/wallet-protobuf-testnet (MODE_WORLD_READABLE | MODE_WORLD_WRITEABLE)
 
 The wallet file format is not compatible to wallet.dat (Satoshi client). Rather, it uses a custom protobuf format
 which should be compatible between clients using xazabj.
 
 Certain actions cause automatic rolling backups of your wallet to app-private storage:
 
-	Mainnet: /data/data/hashengineering.darkcoin.wallet/files/key-backup-protobuf (MODE_PRIVATE)
-	Testnet: /data/data/hashengineering.darkcoin.wallet_test/files/key-backup-protobuf-testnet (MODE_PRIVATE)
+	Mainnet: /data/data/edirin.darkcoin.wallet/files/key-backup-protobuf (MODE_PRIVATE)
+	Testnet: /data/data/edirin.darkcoin.wallet_test/files/key-backup-protobuf-testnet (MODE_PRIVATE)
 
 Your wallet can be manually backed up to and restored from external storage:
 
@@ -30,15 +30,15 @@ itself to restore from the backup, see the separate [README.recover.md](README.r
 The current fee rate for each of the fee categories (economic, normal, priority) is cached in
 app-private storage:
 
-    Mainnet: /data/data/hashengineering.darkcoin.wallet/files/fees.txt
-    Testnet: /data/data/hashengineering.darkcoin.wallet_test/files/fees-testnet.txt
+    Mainnet: /data/data/edirin.darkcoin.wallet/files/fees.txt
+    Testnet: /data/data/edirin.darkcoin.wallet_test/files/fees-testnet.txt
 
 
 ### DEBUGGING
 
 Wallet file for Testnet can be pulled from an (even un-rooted) device using:
 
-	adb pull /data/data/hashengineering.darkcoin.wallet/files/wallet-protobuf-testnet
+	adb pull /data/data/edirin.darkcoin.wallet/files/wallet-protobuf-testnet
 
 Log messages can be viewed by:
 
@@ -77,7 +77,7 @@ Finally, you can build Xazab Wallet and sign it with your development key. Again
 use
 
 	# first time only
-	git clone -b master https://github.com/HashEngineering/xazab-wallet.git xazab-wallet
+	git clone -b master https://github.com/xazab/xazab-wallet.git xazab-wallet
 	cd xazab-wallet
 	git pull
 	git submodule init
