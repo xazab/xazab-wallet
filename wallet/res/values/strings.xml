@@ -88,6 +88,13 @@
     <string name="send_coins_options_fee_category">Fee</string>
     <string name="send_coins_options_fee_category_economic">Economic</string>
     <string name="send_coins_options_fee_category_priority">Priority</string>
+    <string name="raise_fee_dialog_state_done">Ferdig.</string>
+    <string name="raise_fee_dialog_state_decrypting">Dekrypterer…</string>
+    <string name="raise_fee_dialog_title">Øk nettverksgebyret</string>
+    <string name="wallet_transactions_fragment_empty_text_howto"> Xazab </string>
+    <string name="wallet_transactions_fragment_empty_text_received">Y</string>
+    <string name="wallet_transactions_fragment_empty_text_sent">Y</string>
+    <string name="raise_fee_dialog_button_raise">Höj</string>
     <string name="send_coins_options_empty">Empty wallet</string>
     <string name="sweep_wallet_activity_title">Import Private Key</string>
     <string name="sweep_wallet_fragment_intro">You are about to sweep a paper wallet or coupon. This will move all coins from that paper to your wallet on this device. When the transaction is confirmed, the paper will be worthless and should not be re-used for safety reasons.</string>

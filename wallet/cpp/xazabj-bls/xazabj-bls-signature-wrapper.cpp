@@ -690,11 +690,7 @@ SWIGEXPORT void JNICALL Java_org_xazabj_bls_JNI_BLS_1SetContextError(JNIEnv *jen
   core_get()->code = error;
 }
 
-<<<<<<< HEAD:wallet/cpp/xazabj-bls/xazabj-bls-signature-wrapper.cpp
 std::string XAZABJ_VERSION = "0.17.4";
-=======
-std::string DASHJ_VERSION = "0.17.5-SNAPSHOT";
->>>>>>> fa78bab... Update to SDK 29 (#524):wallet/cpp/dashj-bls/dashj-bls-signature-wrapper.cpp
 
 SWIGEXPORT jstring JNICALL Java_org_xazabj_bls_JNI_BLS_1GetVersionString(JNIEnv *jenv, jclass jcls) {
   (void)jenv;

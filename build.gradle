@@ -1,9 +1,5 @@
 ext {
-<<<<<<< HEAD
     xazabjVersion = "0.17.4"
-=======
-    dashjVersion = "0.17.5-SNAPSHOT"
->>>>>>> fa78bab... Update to SDK 29 (#524)
 }
 
 buildscript {
