@@ -65,7 +65,7 @@ public final class Constants {
         switch (BuildConfig.FLAVOR) {
             case "prod":
             case "beta": {
-                DNS_SEED = new String[]{"dnsseed.xazab.xyz", "80.211.38.141:30303"};
+                DNS_SEED = new String[]{"dnsseed.xazab.xyz", "80.211.38.141:30303", "185.58.194.240:30303","158.51.97.132:30303"};
                 BIP44_PATH = DeterministicKeyChain.BIP44_ACCOUNT_ZERO_PATH;
                 NETWORK_PARAMETERS = MainNetParams.get();
                 IS_PROD_BUILD = true;
@@ -189,7 +189,7 @@ public final class Constants {
     public static final String DEFAULT_EXCHANGE_CURRENCY = "USD";
 
     /** Recipient e-mail address for reports. */
-    public static final String REPORT_EMAIL = "support@xazab.xyz";
+    public static final String REPORT_EMAIL = "xazabdeveloper@gmail.com";
 
     /** Subject line for manually reported issues. */
     public static final String REPORT_SUBJECT_BEGIN = "Android Xazab Wallet:  ";
