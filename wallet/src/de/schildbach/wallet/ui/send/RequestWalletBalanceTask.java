@@ -333,12 +333,12 @@ public final class RequestWalletBalanceTask {
 			onResult(utxos);
 			return true;
 		} else {
-			utxos = requestWalletBalanceFromBlockExplorer("https://explorer.xazab.xyz/chain/Xazab/unspent/", UnspentAPI.ABE, address);
+			utxos = requestWalletBalanceFromBlockExplorer("https://insight.xazab.xyz/addr/", UnspentAPI.Insight, address);
 			if(utxos != null) {
 				onResult(utxos);
 				return true;
 			} else {
-				utxos = requestWalletBalanceFromBlockExplorer("https://chainz.cryptoid.info/xazab/api.dws?q=unspent", UnspentAPI.CryptoId, address);
+				utxos = requestWalletBalanceFromBlockExplorer("https://insight.xazab.xyz/addr/", UnspentAPI.Insight, address);
 				if(utxos != null) {
 					onResult(utxos);
 					return true;

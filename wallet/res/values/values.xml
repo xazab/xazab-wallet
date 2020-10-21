@@ -23,7 +23,7 @@
 	</string-array>
 	<string-array name="preferences_block_explorer_values">
 		<item>http://explorer.xazab.xyz/</item>
-		<item>http://explorer.xazab.tech/chain/Xazab/</item>
+		<item>http://explorer.xazab.xyz/</item>
 	</string-array>
 	<string-array name="preferences_block_explorer_labels">
 		<item>Xazab Insight Block Explorer</item>
