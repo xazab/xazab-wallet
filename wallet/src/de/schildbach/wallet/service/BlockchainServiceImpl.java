@@ -155,7 +155,7 @@ public class BlockchainServiceImpl extends LifecycleService implements Blockchai
     private final SeedPeers seedPeerDiscovery = new SeedPeers(Constants.NETWORK_PARAMETERS);
     private final DnsDiscovery dnsDiscovery = new DnsDiscovery(Constants.DNS_SEED, Constants.NETWORK_PARAMETERS);
     ArrayList<PeerDiscovery> peerDiscoveryList = new ArrayList<>(2);
-    private final static int MINIMUM_PEER_COUNT = 16;
+    private final static int MINIMUM_PEER_COUNT = 3;
 
     private static final int MIN_COLLECT_HISTORY = 2;
     private static final int IDLE_BLOCK_TIMEOUT_MIN = 2;
