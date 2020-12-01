@@ -68,6 +68,7 @@ import org.bitcoinj.core.VerificationException;
 import org.bitcoinj.crypto.ChildNumber;
 import org.bitcoinj.wallet.Wallet;
 import org.xazab.wallet.common.Configuration;
+import org.xazab.wallet.common.UserInteractionAwareCallback;
 import org.xazab.wallet.common.data.CurrencyInfo;
 import org.xazab.wallet.common.ui.DialogBuilder;
 import org.xazab.wallet.integration.uphold.ui.UpholdAccountActivity;
@@ -506,7 +507,8 @@ public final class WalletActivity extends AbstractBindServiceActivity
     }
 
     private void handleReportIssue() {
-        ReportIssueDialogBuilder.createReportIssueDialog(this, application).show();
+        Dialog dialog = ReportIssueDialogBuilder.createReportIssueDialog(this, application).show();
+        dialog.getWindow().setCallback(new UserInteractionAwareCallback(dialog.getWindow().getCallback(), this));
     }
 
     private void handlePaste() {
