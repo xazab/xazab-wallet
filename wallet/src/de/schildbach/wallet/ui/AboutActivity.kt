@@ -26,7 +26,7 @@ import de.schildbach.wallet_test.BuildConfig
 import de.schildbach.wallet_test.R
 import kotlinx.android.synthetic.main.activity_about.*
 import org.bitcoinj.core.VersionMessage
-import org.dash.wallet.common.UserInteractionAwareCallback
+import org.xazab.wallet.common.UserInteractionAwareCallback
 
 
 class AboutActivity : BaseMenuActivity() {
