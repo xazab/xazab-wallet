@@ -8,6 +8,13 @@ ext {
 repositories {
     mavenLocal()
     maven {
+        url 'http://oss.jfrog.org/artifactory/oss-snapshot-local'
+        name 'OJO snapshots'
+    }
+    maven {
+        url 'http://dl.bintray.com/xazab/Xazabj'
+    }
+    maven {
         url 'https://maven.google.com/'
         name 'Google'
     }
@@ -39,8 +46,11 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'com.google.android:flexbox:1.1.0'
     implementation 'androidx.preference:preference:1.1.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
-    implementation "org.xazabj:xazabj-core:0.17.5"
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation "org.xazabj:xazabj-core:$xazabjVersion"
+    implementation "org.xazabj-android:xazabj-bls-android:0.17.5"
+    implementation "org.xazabj-android:xazabj-x11-android:0.17.5"
+    implementation "org.xazabj-android:xazabj-scrypt-android:0.17.5"
     implementation 'com.google.guava:guava:29.0-android'
     implementation 'com.google.zxing:core:3.3.3'    // 3.3.3 is the maximum to support Android 4.4 to 6.x
     implementation "com.squareup.okhttp3:okhttp:$ok_http_version"
@@ -120,15 +130,7 @@ android {
         generatedDensities = ['hdpi', 'xhdpi']
         vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        ndk {
-            abiFilters 'armeabi-v7a', 'x86', 'arm64-v8a', 'x86_64'
-        }
-        externalNativeBuild {
-            cmake {
-                cFlags '-DHAVE_CONFIG_H -DWORD=32'
-                cppFlags ""
-            }
-        }
+
         javaCompileOptions {
             annotationProcessorOptions {
                 arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
@@ -200,11 +202,7 @@ android {
             applicationId = "edirin.darkcoin.wallet.devnet"
         }
     }
-    externalNativeBuild {
-        cmake {
-            path 'cpp/CMakeLists.txt'
-        }
-    }
+
     packagingOptions {
         exclude 'lib/x86_64/darwin/libscrypt.dylib'
         exclude 'lib/x86_64/freebsd/libscrypt.so'
